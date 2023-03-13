@@ -1,0 +1,80 @@
+.about-flex{
+  width: 83%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+  color: #777474;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.social_child{
+  display: flex;
+  gap: 15px;
+}
+.download_child{
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------------------- */
+.about-flex-2{
+  width: 83%;
+  margin: auto;
+  color: #777474;
+  font-size: 14px;
+  margin-bottom: 25px;
+
+}
+.P-category,.P-brand ,.P-serve,.P-options{
+display: grid;
+grid-template-columns: 18% 80%;
+gap: 2%;
+margin-bottom: 10px;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.hover:hover,.download_child:hover,.social_child:hover,.options:hover{
+  cursor: pointer;
+  color: #84c225;
+}
+
+@media screen and (max-width: 950px) {
+  .about-flex{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .bigbasket{
+      grid-column: 1 / 2;
+      grid-row: 1
+  }
+  .help{
+      grid-column: 2/ 2;
+      grid-row: 1
+  }
+  .download_app{
+      grid-column: 1 ;
+      grid-row: 2
+  }
+  .social-media{
+      grid-column: 1 ;
+      grid-row: 3
+  }
+  .download_child{
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+  }
+
+  .P-category,.P-brand ,.P-serve,.P-options{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 2%;
+      margin-bottom: 10px;
+      }
+  }
